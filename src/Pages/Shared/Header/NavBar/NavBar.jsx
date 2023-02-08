@@ -4,33 +4,24 @@ import { FaSearch } from "react-icons/fa";
 
 const NavBar = () => {
   const navList = [
-    <Link className="mr-6 text-slate-700" to="/">
-      Home
+    <Link className="mr-6 text-slate-700" to="/categories">
+      Categories
     </Link>,
     <Link className="mr-6 text-slate-700" to="/about">
       About
     </Link>,
-    <Link className="mr-6 text-slate-700" to="/categories">
-      Categories
-    </Link>,
     <Link className="mr-6 text-slate-700" to="/contact">
       Contact
-    </Link>,
-    <Link className="mr-6 text-slate-700" to="/archive">
-      Archive
-    </Link>,
-    <Link className="mr-6 text-slate-700" to="/resources">
-      Resources
     </Link>,
     <Link className="mr-6 text-slate-700" to="/portfolio">
       Portfolio
     </Link>,
     <Link className="mr-5 text-slate-700" to="/login">
-    Login
-  </Link>,
-  <Link className="mr-4 text-slate-700" to="/register">
-    Register
-  </Link>
+      Login
+    </Link>,
+    <Link className="mr-4 text-slate-700" to="/register">
+      Register
+    </Link>,
   ];
   return (
     <div className="navbar bg-slate-100">
