@@ -25,6 +25,12 @@ const NavBar = () => {
     <Link className="mr-6 text-slate-700" to="/portfolio">
       Portfolio
     </Link>,
+    <Link className="mr-5 text-slate-700" to="/login">
+    Login
+  </Link>,
+  <Link className="mr-4 text-slate-700" to="/register">
+    Register
+  </Link>
   ];
   return (
     <div className="navbar bg-slate-100">
@@ -57,19 +63,8 @@ const NavBar = () => {
           Blogger Buddy
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navList}</ul>
-      </div>
-      <div className="navbar-end">
-        <ul className="menu menu-horizontal px-1">
-            <Link to='/'><FaSearch className="text-2xl mr-4"></FaSearch></Link>
-          <Link className="mr-4 text-slate-700" to="/register">
-            Register
-          </Link>
-          <Link className="mr-5 text-slate-700" to="/login">
-            Login
-          </Link>
-        </ul>
       </div>
     </div>
   );

@@ -7,6 +7,11 @@ import Contact from "../../Pages/Contact/Contact";
 import Home from "../../Pages/Home/Home";
 import Portfolio from "../../Pages/Portfolio/Portfolio";
 import Resources from "../../Pages/Resources/Resources";
+import CookiePolicy from "../../Pages/Shared/Footer/Legal/CookiePolicy";
+import PrivacyPolicy from "../../Pages/Shared/Footer/Legal/PrivacyPolicy";
+import TermsOfUse from "../../Pages/Shared/Footer/Legal/TermsOfUse";
+import Login from "../../Pages/Shared/Login/Login";
+import Register from "../../Pages/Shared/Register/Register";
 
 export const router = createBrowserRouter([
     {
@@ -40,6 +45,26 @@ export const router = createBrowserRouter([
             {
                 path: '/portfolio',
                 element: <Portfolio></Portfolio>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            },
+            {
+                path: '/termsOfUse',
+                element: <TermsOfUse></TermsOfUse>
+            },
+            {
+                path: '/privacyPolicy',
+                element: <PrivacyPolicy></PrivacyPolicy>
+            },
+            {
+                path: '/cookiePolicy',
+                element: <CookiePolicy></CookiePolicy>
             }
         ]
     }
