@@ -10,14 +10,14 @@ const Login = () => {
         <div className="text-center lg:text-left w-1/2 mr-20 mb-10">
           <img className="" src={LoginImg} alt="" srcset="" />
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="bg-slate-100 card flex-shrink-0 w-full max-w-sm shadow-2xl">
           <div className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter Email"
                 className="input input-bordered"
               />
@@ -27,7 +27,7 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="Enter Password"
                 className="input input-bordered"
               />
@@ -41,7 +41,7 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary bg-[#646cff] focus:outline-none hover:bg-[#5961ffdc] text-white border-0">
+              <button className="bg-[#646cff] focus:outline-none hover:bg-[#5961ffdc] text-white border-0">
                 Login
               </button>
               <div className="divider">OR</div>
