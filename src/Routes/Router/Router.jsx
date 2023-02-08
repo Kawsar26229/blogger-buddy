@@ -10,6 +10,7 @@ import Resources from "../../Pages/Resources/Resources";
 import CookiePolicy from "../../Pages/Shared/Footer/Legal/CookiePolicy";
 import PrivacyPolicy from "../../Pages/Shared/Footer/Legal/PrivacyPolicy";
 import TermsOfUse from "../../Pages/Shared/Footer/Legal/TermsOfUse";
+import ForgetPassword from "../../Pages/Shared/Login/ForgetPassword";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 
@@ -65,6 +66,10 @@ export const router = createBrowserRouter([
             {
                 path: '/cookiePolicy',
                 element: <CookiePolicy></CookiePolicy>
+            },
+            {
+                path: '/forgetPassword',
+                element: <ForgetPassword></ForgetPassword>
             }
         ]
     }
